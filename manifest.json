@@ -1,0 +1,30 @@
+{
+  "name": "タカネ式 JFT-Basic 対策",
+  "short_name": "JFT-Basic",
+  "description": "JFT-Basic (A1 / A2) preparation for Sri Lankan learners — 210 questions with English and Sinhala explanations.",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#14213D",
+  "theme_color": "#14213D",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
