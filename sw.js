@@ -2,7 +2,7 @@
    ・本体（index.html とアイコン）はインストール時にキャッシュする
    ・聴解の mp3 は再生したものから順にキャッシュに貯める
    教材を差し替えたら CACHE の名前の数字を上げること。古いキャッシュは自動で消える。 */
-var CACHE = "jft1-v2";
+var CACHE = "jft1-v3-exam-lab";
 var SHELL = [
   "./",
   "./index.html",
@@ -26,7 +26,7 @@ self.addEventListener("activate", function (e) {
   e.waitUntil(
     caches.keys().then(function (keys) {
       return Promise.all(keys.map(function (k) {
-        return k === CACHE ? null : caches.delete(k);
+        return k === CACHE || !k.startsWith("jft1-") ? null : caches.delete(k);
       }));
     }).then(function () { return self.clients.claim(); })
   );
@@ -68,3 +68,4 @@ self.addEventListener("fetch", function (e) {
     })
   );
 });
+
