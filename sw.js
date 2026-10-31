@@ -1,5 +1,5 @@
 /* Update the study home immediately; retain audio and the shell for offline use. */
-var CACHE = 'jft1-v4-navigation';
+var CACHE = 'jft1-v5-study-room';
 var SHELL = ['./', './index.html', './exam-lab.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', function (event) {
  event.waitUntil(caches.open(CACHE).then(function (cache) {
